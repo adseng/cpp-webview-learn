@@ -3,3 +3,8 @@ app/frontend/node_modules/
 app/frontend/dist/
 app/backend/build/
 *.tsbuildinfo
+
+.idea/
+.vscode/
+.cursor/
+.DS_Store
