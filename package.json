@@ -5,6 +5,7 @@
   "scripts": {
     "frontend:dev": "pnpm --dir app/frontend dev",
     "frontend:build": "pnpm --dir app/frontend build",
-    "backend:build": "cmake -S app/backend -B app/backend/build && cmake --build app/backend/build --config Release"
+    "backend:build": "cmake -S app/backend -B app/backend/build && cmake --build app/backend/build --config Release",
+    "saucer_backend:build": "cmake -S app/saucer_backend -B app/saucer_backend/build && cmake --build app/saucer_backend/build --config Release"
   }
 }
