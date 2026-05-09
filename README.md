@@ -7,7 +7,9 @@
 # 启动
 
 ```powershell
+pnpm install
 pnpm frontend:build
+pnpm backend:build
 Remove-Item Env:WEBVIEW_DEV_SERVER_URL -ErrorAction SilentlyContinue
 .\app\backend\build\Release\cpp_webview_host.exe
 ```
