@@ -16,10 +16,10 @@ namespace fs = std::filesystem;
 
 std::string handle_native_request(const std::string &raw);
 
-bool is_env_enabled(const char *name) {
+bool is_env_enabled(const char *name, bool default_value) {
   const char *raw = std::getenv(name);
   if (raw == nullptr) {
-    return false;
+    return default_value;
   }
 
   const std::string value(raw);
@@ -49,7 +49,7 @@ coco::stray start(saucer::application *app) {
       .run_at = saucer::script::time::creation,
   });
 
-  if (is_env_enabled("WEBVIEW_DEVTOOLS")) {
+  if (is_env_enabled("WEBVIEW_DEVTOOLS_ENABLED", true)) {
     webview.set_dev_tools(true);
     webview.set_context_menu(true);
   }
