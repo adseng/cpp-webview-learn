@@ -13,3 +13,7 @@ pnpm backend:build
 Remove-Item Env:WEBVIEW_DEV_SERVER_URL -ErrorAction SilentlyContinue
 .\app\backend\build\Release\cpp_webview_host.exe
 ```
+
+# 效果
+
+![效果图](./docs/assets/image.png)
