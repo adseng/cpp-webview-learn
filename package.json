@@ -1,0 +1,10 @@
+{
+  "name": "cpp-webview-learn",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "frontend:dev": "pnpm --dir app/frontend dev",
+    "frontend:build": "pnpm --dir app/frontend build",
+    "backend:build": "cmake -S app/backend -B app/backend/build && cmake --build app/backend/build --config Release"
+  }
+}
